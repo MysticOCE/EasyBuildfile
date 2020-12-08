@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="FE8 - Fields - 01000203.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="0x05"/>
+   <property name="Anims2" value="0x00"/>
+   <property name="ChapterID" value="0x04"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="0x04"/>
+   <property name="ObjectType" value="0x01"/>
+   <property name="PaletteID" value="0x02"/>
+   <property name="TileConfig" value="0x03"/>
+  </properties>
+  <data encoding="csv">
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131,
+131,131,131,131,131,131,131,131,131,131,131,131,131,131,131
+</data>
+ </layer>
+</map>

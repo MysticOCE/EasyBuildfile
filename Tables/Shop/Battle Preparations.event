@@ -1,0 +1,6 @@
+#define csvmacro021(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008,arg009,arg010,arg011,arg012,arg013,arg014,arg015,arg016,arg017) "BYTE arg000 arg001 arg002 arg003 arg004 arg005 arg006 arg007 arg008 arg009 arg010 arg011 arg012 arg013 arg014 arg015 arg016 arg017 "
+
+PUSH
+ORG 0xa188e4
+csvmacro021(0x1,0x0,0x14,0x0,0x1f,0x0,0x2d,0x0,0x38,0x0,0x45,0x0,0x3f,0x0,0x4b,0x0,0x0,0x0 0x0 0x0)
+POP

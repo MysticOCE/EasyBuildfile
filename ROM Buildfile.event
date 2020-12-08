@@ -1,0 +1,32 @@
+#ifdef _FE8_
+    #include "EAstdlib.event"
+	#include "EA Standard Library/Backward Compatibility.txt"
+	#define FreeSpace 0xefb2e0
+	
+	ORG FreeSpace
+	
+	//You shouldn't need to mess with this file much. If you're adding/removing content, go to the respective installers and add/remove content there. The less you mess with this file, the better.
+	
+	//will be generated once textprocess has run
+	#include "Text/Install Text Data.event"
+	
+	#include "Tables/Table Definitions.txt"
+	#include "Tables/Table Installer.event"
+	
+	#include "Engine Hacks/Master Hack Installer.event"
+	
+	#include "Map/Master Map Installer.event"
+	
+	#include "Events/Chapter Events Installer.event"
+	
+	#include "Mugs/Mugs Installer.event"
+	
+	//This file will not exist until you use Pal2EA to generate the file. Go check out the thread https://feuniverse.us/t/pal2ea-the-buildfile-palette-inserter/2646 . Alternatives exist but I found this was the easiest to start with.
+	//#include "Palettes/Palette Installer.event"
+	
+	#include "Animation/Master Animation Installer.txt"
+	
+	#include "Music/Music Installer.event"
+#else
+    ERROR You are not assembling FE8 events!
+#endif

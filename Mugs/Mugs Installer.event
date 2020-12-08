@@ -1,0 +1,5 @@
+#include "Tools/Tool Helpers.txt"
+
+RosheaMug:
+#incext PortraitFormatter "Roshea.png"
+setMugEntry(0x2,RosheaMug,2,5,2,3)

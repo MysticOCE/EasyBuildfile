@@ -1,0 +1,13 @@
+# 0x0903
+[OpenMidLeft][LoadFace][0x02][0x01]
+This is the first piece of[NL]
+story text.[A][NL]
+Be warned that the chapter is[NL]
+impossible to finish.[A][NL][X]
+
+## 
+[OpenMidRight][LoadFace][0x04][0x01]
+This is the second piece[NL]
+of story text.[A][NL]
+This will never show in game but[NL]
+is here to show how text works.[X]
