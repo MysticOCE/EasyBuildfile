@@ -15,7 +15,7 @@
   //2263B0 is the end maybe?
   #include "drumfix_fe8.event"
   voicegroup000:
-  #incbin "FE8_NI_Map.bin"
+  #incbin "FE8_NI_2.bin"
 #endif
 
 #define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
