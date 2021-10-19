@@ -1,5 +1,3 @@
-128
-0x00 Nothing
 0x01 Ephraim Lord
 0x02 Eirika Lord
 0x03 Ephraim Master Lord

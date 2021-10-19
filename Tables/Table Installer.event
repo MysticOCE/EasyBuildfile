@@ -36,9 +36,7 @@
 
 #include "Other\FE8 Promotion level editor.event"
 
-#include "Promotion\Misc map sprite editor.event"
-
-#include "Promotion\Standing map sprite editor.event"
+#include "Promotion\Promotion Branch Editor.event"
 
 #include "Quote\Boss Quote Editor.event"
 
