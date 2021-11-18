@@ -1,7 +1,11 @@
-#include "Tools/Tool Helpers.txt"
+#include "GeneratedInstaller.event"
 
-ALIGN 4
 
-RosheaMug:
-#incext PortraitFormatter "Roshea.png"
-setMugEntry(0x2,RosheaMug,2,5,2,3)
+#define GaryPoint_MugID 2 
+#define Roshea_MugID 3 
+ 
+setMugEntry(GaryPoint_MugID, GaryPoint_MugData, 2,2,2,2) 
+setMugEntry(Roshea_MugID, Roshea_MugData, 2,5,2,3) 
+
+
+
