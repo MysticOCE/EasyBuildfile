@@ -14,13 +14,13 @@ setlocal enableextensions enabledelayedexpansion
 set /a count = 1
 @for /f "tokens=*" %%m in (png.txt) do (
 set /a count += 1
-echo #define %%~nm_MugID !count! >> GeneratedInstaller.txt
+echo #define %%~nmMug !count! >> GeneratedInstaller.txt
 ) 
 endlocal 
 
 @echo. >> GeneratedInstaller.txt
 @for /f "tokens=*" %%m in (png.txt) do (
-echo setMugEntry^(%%~nm_MugID, %%~nm_MugData, 2,2,2,2^) >> GeneratedInstaller.txt
+echo setMugEntry^(%%~nmMug, %%~nm_MugData, 2,2,2,2^) >> GeneratedInstaller.txt
 ) 
 
 
@@ -40,10 +40,10 @@ echo setMugEntry^(%%~nm_MugID, %%~nm_MugData, 2,2,2,2^) >> GeneratedInstaller.tx
 @for /f "tokens=*" %%m in (png.txt) do (
 echo ALIGN 4 >> GeneratedInstaller.txt
 echo %%~nm_MugData: >> GeneratedInstaller.txt
-echo #incbin "%%~nm_mug.dmp" >> GeneratedInstaller.txt
-echo #incbin "%%~nm_frames.dmp" >> GeneratedInstaller.txt
-echo #incbin "%%~nm_palette.dmp" >> GeneratedInstaller.txt
-echo #incbin "%%~nm_minimug.dmp" >> GeneratedInstaller.txt
+echo #incbin "dmp/%%~nm_mug.dmp" >> GeneratedInstaller.txt
+echo #incbin "dmp/%%~nm_frames.dmp" >> GeneratedInstaller.txt
+echo #incbin "dmp/%%~nm_palette.dmp" >> GeneratedInstaller.txt
+echo #incbin "dmp/%%~nm_minimug.dmp" >> GeneratedInstaller.txt
 
 
 echo. >> GeneratedInstaller.txt
@@ -53,12 +53,12 @@ echo. >> GeneratedInstaller.txt
 
 @cd %~dp0
 
-type %~dp0Png\GeneratedInstaller.txt >> %~dp0Png\GeneratedInstaller.event
+type %~dp0Png\GeneratedInstaller.txt > %~dp0Png\GeneratedInstaller.event
 
 @copy "%~dp0Png\GeneratedInstaller.event" "%~dp0" > nul
 
+@del "%~dp0Png\GeneratedInstaller.txt"
 @del "%~dp0Png\GeneratedInstaller.event"
-
 
 
 

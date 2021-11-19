@@ -1,11 +1,12 @@
+
 #include "GeneratedInstaller.event"
 
 
-#define GaryPoint_MugID 2 
-#define Roshea_MugID 3 
- 
-setMugEntry(GaryPoint_MugID, GaryPoint_MugData, 2,2,2,2) 
-setMugEntry(Roshea_MugID, Roshea_MugData, 2,5,2,3) 
+#define GaryPointMug 2 
+#define RosheaMug 3 
 
+
+setMugEntry(GaryPointMug, GaryPoint_MugData, 2,2,2,2) 
+setMugEntry(RosheaMug, Roshea_MugData, 2,5,2,3) 
 
 
