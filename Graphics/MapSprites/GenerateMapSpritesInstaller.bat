@@ -2,6 +2,125 @@
 
 @cd %~dp0/sms
 @dir *.png /b > png.txt
+
+Setlocal enabledelayedexpansion
+
+Set "Pattern= "
+Set "Replace=_"
+
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+
+Set "Pattern=,"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+@dir *.png /b > png.txt
+
+Set "Pattern=("
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern=)"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern={"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern=}"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+@dir *.png /b > png.txt
+Set "Pattern=-"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+
+@cd %~dp0/mms
+
+Set "Pattern= "
+Set "Replace=_"
+
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+
+Set "Pattern=,"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+@dir *.png /b > png.txt
+
+Set "Pattern=("
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern=)"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern={"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+@dir *.png /b > png.txt
+Set "Pattern=}"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+@dir *.png /b > png.txt
+Set "Pattern=-"
+Set "Replace="
+For %%a in (*.png) Do (
+    Set "File=%%~a"
+    Ren "%%a" "!File:%Pattern%=%Replace%!"
+)
+
+@cd %~dp0/sms
+
+@dir *.png /b > png.txt
+
+
 @echo //Generated - do not edit!>GeneratedInstaller.txt
 @echo //Copy paste the /* */ section into your definitions if desired.>>GeneratedInstaller.txt
 @echo //Please copy the SetSMS and SetMMS section to change SMS size and MMS AP. >>GeneratedInstaller.txt
@@ -11,8 +130,9 @@
 
 
 @echo ^/^* >> GeneratedInstaller.txt
+@echo //First free SMS is 107>> GeneratedInstaller.txt
 setlocal enableextensions enabledelayedexpansion
-set /a count = 0
+set /a count = 107
 @for /f "tokens=*" %%m in (png.txt) do (
 echo #define %%~nm !count! >> GeneratedInstaller.txt
 set /a count += 1
@@ -27,8 +147,9 @@ endlocal
 @dir *.png /b > png.txt
 @cd %~dp0
 
+@echo //First free MMS is 127 and will show up if you've expanded classes.>> sms/GeneratedInstaller.txt
 setlocal enableextensions enabledelayedexpansion
-set /a count = 1
+set /a count = 127
 @for /f "tokens=*" %%m in (mms/png.txt) do (
 echo #define %%~nm !count! >> sms/GeneratedInstaller.txt
 set /a count += 1
@@ -52,7 +173,7 @@ endlocal
 @echo PUSH >> GeneratedInstaller.txt
 @echo. >> GeneratedInstaller.txt
 @for /f "tokens=*" %%m in (png.txt) do (
-echo SetSMS^(%%~nm, 2, %%~nm_Data^) >> GeneratedInstaller.txt
+echo SetSMS^(%%~nm, 1, %%~nm_Data^) >> GeneratedInstaller.txt
 )
 @echo. >> GeneratedInstaller.txt
 

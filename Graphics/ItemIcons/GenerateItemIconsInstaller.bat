@@ -10,8 +10,10 @@
 
 
 @echo ^/^* >> GeneratedInstaller.txt
+@echo ^/^/First free icon past vanilla is 222 / 0xDE >> GeneratedInstaller.txt
+@echo. >> GeneratedInstaller.txt
 setlocal enableextensions enabledelayedexpansion
-set /a count = 0
+set /a count = 222
 @for /f "tokens=*" %%m in (png.txt) do (
 echo #define %%~nmIcon !count! >> GeneratedInstaller.txt
 set /a count += 1

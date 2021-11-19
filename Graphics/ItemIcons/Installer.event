@@ -1,6 +1,16 @@
-#define BlankIcon 0 
-#define ChoiceBandByZaimIcon 1 
-#define vanilla_iconsIcon 2 
+//First free icon past vanilla is 222 / 0xDE 
+ 
+#define BlankIcon 222 
+#define Scythe_By_BeansyIcon 223 
+
+
+
+
+
+
+
+
+
 
 
 ALIGN 4
