@@ -1,0 +1,69 @@
+//Generated - do not edit!
+//Copy paste the /* */ section into your definitions if desired.
+//Please copy the SetSMS and SetMMS section to change SMS size and MMS AP. 
+ 
+ 
+ 
+/* 
+#define Bulbasaur_SMS 0 
+#define Charmander_SMS 1 
+#define Squirtle_SMS 2 
+ 
+ 
+#define Bulbasaur_MMS 1 
+#define Charmander_MMS 2 
+#define Squirtle_MMS 3 
+ 
+*/ 
+ 
+ 
+ 
+/* 
+//Copy from here 
+PUSH 
+ 
+SetSMS(Bulbasaur_SMS, 2, Bulbasaur_SMS_Data) 
+SetSMS(Charmander_SMS, 2, Charmander_SMS_Data) 
+SetSMS(Squirtle_SMS, 2, Squirtle_SMS_Data) 
+ 
+ 
+SetMMS(Bulbasaur_MMS, Bulbasaur_MMS_Data, DemonKingAP) 
+SetMMS(Charmander_MMS, Charmander_MMS_Data, DemonKingAP) 
+SetMMS(Squirtle_MMS, Squirtle_MMS_Data, DemonKingAP) 
+ 
+POP 
+//Copy until here 
+*/ 
+ 
+ 
+//SMS Image Data 
+ 
+ALIGN 4 
+Bulbasaur_SMS_Data: 
+#incbin "dmp/Bulbasaur_SMS.dmp" 
+ 
+ALIGN 4 
+Charmander_SMS_Data: 
+#incbin "dmp/Charmander_SMS.dmp" 
+ 
+ALIGN 4 
+Squirtle_SMS_Data: 
+#incbin "dmp/Squirtle_SMS.dmp" 
+ 
+ 
+ 
+ 
+//MMS Image Data 
+ 
+ALIGN 4 
+Bulbasaur_MMS_Data: 
+#incbin "dmp/Bulbasaur_MMS.dmp" 
+ 
+ALIGN 4 
+Charmander_MMS_Data: 
+#incbin "dmp/Charmander_MMS.dmp" 
+ 
+ALIGN 4 
+Squirtle_MMS_Data: 
+#incbin "dmp/Squirtle_MMS.dmp" 
+ 
