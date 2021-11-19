@@ -19,12 +19,8 @@
 	
 	#include "Events/Chapter Events Installer.event"
 	
-	#include "Graphics/Mugs/Mugs Installer.event"
-	
-	//This file will not exist until you use Pal2EA to generate the file. Go check out the thread https://feuniverse.us/t/pal2ea-the-buildfile-palette-inserter/2646 . Alternatives exist but I found this was the easiest to start with.
-	//#include "Graphics/Palettes/Palette Installer.event"
-	
-	#include "Graphics/Animation/Master Animation Installer.txt"
+	#include "Graphics/Installer.event"
+
 	
 	#include "Music/Music Installer.event"
 #else

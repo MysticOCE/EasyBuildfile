@@ -1,0 +1,26 @@
+#define BlankIcon 0 
+#define ChoiceBandByZaimIcon 1 
+#define vanilla_iconsIcon 2 
+
+
+ALIGN 4
+NewItemIcons:
+// Sheet with all icons goes here 
+#incbin "dmp/vanilla_icons.dmp" // Expanded to 255 icons. 
+
+#define ItemIconEntry(ItemIconID) "ORG NewItemIcons + (ItemIconID*128)"
+
+#include "GeneratedInstaller.event"
+
+
+
+PUSH
+ORG $36B4
+POIN NewItemIcons
+ORG $3788
+POIN NewItemIcons
+POP
+
+
+
+

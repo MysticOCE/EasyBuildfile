@@ -1,6 +1,6 @@
 @echo off
 
-@set "PortraitFormatter=%~dp0/../../Event Assembler/Tools/PortraitFormatter.exe"
+@set "PortraitFormatter=%~dp0/../../EventAssembler/Tools/PortraitFormatter.exe"
 
 @cd %~dp0/Png
 

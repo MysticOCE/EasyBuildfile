@@ -1,0 +1,28 @@
+//Generated - do not edit!
+//Copy paste the /* */ section into your definitions if desired.
+ 
+ 
+ 
+/* 
+#define BlankIcon 0 
+#define ChoiceBandByZaimIcon 1 
+#define vanilla_iconsIcon 2 
+*/ 
+ 
+ 
+ 
+ 
+//Image Data 
+ 
+PUSH 
+ 
+ItemIconEntry(BlankIcon) 
+#incbin "dmp/Blank.dmp" 
+ 
+ItemIconEntry(ChoiceBandByZaimIcon) 
+#incbin "dmp/ChoiceBandByZaim.dmp" 
+ 
+ItemIconEntry(vanilla_iconsIcon) 
+#incbin "dmp/vanilla_icons.dmp" 
+ 
+POP 
