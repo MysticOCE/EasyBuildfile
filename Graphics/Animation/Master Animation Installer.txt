@@ -8,7 +8,6 @@
 #endif
 
 #define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
-#include "animationpatches.event"
 #define animSword 0
 #define animLance 1
 #define animAxe 2
