@@ -2,9 +2,8 @@
 
 
 
-#define GaryPointMug 2 
-#define RosheaWorksMug 3 
-
+#define GaryPointMug 2
+#define RosheaMug 3
 
 #include "Portraits/Installer.event"
 

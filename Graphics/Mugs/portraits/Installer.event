@@ -13,12 +13,12 @@
     }
 
     {
-        __mx_mug(RosheaWorksMug, __mug_dmp)
-        #incbin "RosheaWorks.pos.dmp"
+        __mx_mug(RosheaMug, __mug_dmp)
+        #incbin "Roshea.pos.dmp"
         BYTE 1 0 0 0; POP;
         align 4
         __mug_dmp:
-            #incbin "RosheaWorks.dmp"
+            #incbin "Roshea.dmp"
     }
 
 }
