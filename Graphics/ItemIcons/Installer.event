@@ -1,0 +1,36 @@
+//First free icon past vanilla is 222 / 0xDE 
+ 
+#define BlankIcon 222 
+#define Scythe_By_BeansyIcon 223 
+
+
+
+
+
+
+
+
+
+
+
+ALIGN 4
+NewItemIcons:
+// Sheet with all icons goes here 
+#incbin "dmp/vanilla_icons.dmp" // Expanded to 255 icons. 
+
+#define ItemIconEntry(ItemIconID) "ORG NewItemIcons + (ItemIconID*128)"
+
+#include "GeneratedInstaller.event"
+
+
+
+PUSH
+ORG $36B4
+POIN NewItemIcons
+ORG $3788
+POIN NewItemIcons
+POP
+
+
+
+

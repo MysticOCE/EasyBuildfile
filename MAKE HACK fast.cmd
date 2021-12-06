@@ -1,12 +1,16 @@
-﻿cd %~dp0
+
+@echo off
+
+cd %~dp0
 
 echo Running fast make hack.
 
 copy FE8_clean.gba myHack.gba
 
-cd "%~dp0Event Assembler"
+cd "%~dp0EventAssembler"
 
-Core A FE8 "-output:%~dp0myHack.gba" "-input:%~dp0ROM Buildfile.event"
+ColorzCore A FE8 "-output:%~dp0myHack.gba" "-input:%~dp0ROM Buildfile.event" "--nocash-sym:%~dp0FE8Hack.sym" "--build-times"
+type "%~dp0FE8_clean.sym" >> "%~dp0myHack.sym"
 
 cd "%~dp0ups"
 

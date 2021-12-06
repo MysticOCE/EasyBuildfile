@@ -1,0 +1,59 @@
+//Generated - do not edit
+//Copy paste the /* */ section into your definitions if desired.
+//Please copy the SetSMS and SetMMS section to change SMS size and MMS AP. 
+ 
+ 
+ 
+/* 
+//First free SMS is 107
+#define Cavalier_M_Sword_SALVAGEDstand 107 
+#define Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand 108 
+ 
+ 
+//First free MMS is 127 and will show up if you've expanded classes.
+#define Cavalier_M_Sword_SALVAGEDwalk 127 
+#define Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk 128 
+ 
+*/ 
+ 
+ 
+ 
+/* 
+//Copy from here 
+PUSH 
+ 
+SetSMS(Cavalier_M_Sword_SALVAGEDstand, 1, Cavalier_M_Sword_SALVAGEDstand_Data) 
+SetSMS(Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand, 1, Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand_Data) 
+ 
+ 
+SetMMS(Cavalier_M_Sword_SALVAGEDwalk, Cavalier_M_Sword_SALVAGEDwalk_Data, DemonKingAP) 
+SetMMS(Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk, Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk_Data, DemonKingAP) 
+ 
+POP 
+//Copy until here 
+*/ 
+ 
+ 
+//SMS Image Data 
+ 
+ALIGN 4 
+Cavalier_M_Sword_SALVAGEDstand_Data: 
+#incbin "dmp/Cavalier_M_Sword_SALVAGEDstand.dmp" 
+ 
+ALIGN 4 
+Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand_Data: 
+#incbin "dmp/Soldier_F_Echoes_Lance_FireEmblemier_flasubanstand.dmp" 
+ 
+ 
+ 
+ 
+//MMS Image Data 
+ 
+ALIGN 4 
+Cavalier_M_Sword_SALVAGEDwalk_Data: 
+#incbin "dmp/Cavalier_M_Sword_SALVAGEDwalk.dmp" 
+ 
+ALIGN 4 
+Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk_Data: 
+#incbin "dmp/Soldier_F_Echoes_Lance_FireEmblemier_flasubanwalk.dmp" 
+ 
