@@ -1,10 +1,12 @@
 
+#include "portraits/Mug Installer.event"
 
+//the current setup is less buggy than the previous one but doesn't automatically generate pos frames
 
+//TODO: Figure out how to get the scripts to call the Tools folder instead
 
-#define GaryPointMug 2
-#define RosheaMug 3
+//This is a standard mug entry macro. The format is setMugEntry(portraitID, the reference to the portrait label, x mouth coord, y mouth coord, x eye coord, y eye coord)
+setMugEntry(0x2, RosheaMug, 2,5,2,3)
 
-#include "Portraits/Installer.event"
-
-
+//Since the Gary mug has no mouth/eye frames, we can enter whatever here. The background color on the mug is treated as transparent in game.
+setMugEntry(0x3, GaryPointMug, 0,0,0,0)

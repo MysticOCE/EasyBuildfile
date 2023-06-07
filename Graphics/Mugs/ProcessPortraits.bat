@@ -3,7 +3,7 @@
 
 cd %~dp0/portraits
 
-Portraits2dmp.exe
+batch.cmd
 
 
 pause 
